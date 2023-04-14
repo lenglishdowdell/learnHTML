@@ -10,7 +10,7 @@ body {
 }
 
 /* background colors */
-	header {background:#f5d55f;}
+	hgroup {background:#f5d55f;}
 	main {background:#fff}
 	/*nav {background:#f5d55f}*/
 	aside {background:#fcf2cf}
@@ -50,10 +50,7 @@ li{
 
 /* Header/logo Title */
 header {
-  text-align: center;
-  color: #282828;
-  padding:0; 
-  height:480px;
+  height:400px;
 }
 
 header img {
@@ -65,7 +62,12 @@ header img {
         /*width: 200px;*/
 }
 
-
+hgroup {
+	text-align: center;
+  color: #282828;
+  padding:10px; 
+  margin: 0;
+}
 
 /* The flexible grid (content) */
 
