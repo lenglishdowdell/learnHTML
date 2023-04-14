@@ -6,20 +6,63 @@
 body {
   font-family: Arial;
   margin: 0;
+  font-size: 16px;
 }
 
 /* background colors */
-	header {background:#f97171}
+	header {background:#f5d55f;}
 	main {background:#fff}
-	nav {background:#f5d55f}
-	aside {background:#c5ed77}
-	footer {background:#72c2f1}
+	/*nav {background:#f5d55f}*/
+	aside {background:#fcf2cf}
+	footer {background:#937f39;}
+	
+h1, h2, h3, h4, h5 {
+	font-family: Georgia, serif;
+}
+
+/* unvisited link */
+a:link {
+  color: #8B4000;
+}
+
+/* visited link */
+a:visited {
+  color: #8B4000;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: green;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li{
+  margin: 10px 0;
+}
 
 /* Header/logo Title */
 header {
-  padding: 60px;
   text-align: center;
-  color: white;
+  color: #282828;
+  padding:0; 
+  height:480px;
+}
+
+header img {
+	width: 100%;
+	/*height: auto;*/
+	object-fit: cover;
+        object-position: center;
+        height: 400px;
+        /*width: 200px;*/
 }
 
 
@@ -33,37 +76,42 @@ header {
 }
 
 /* Style the top navigation bar */
-nav {
+/*nav {
   flex:1;
   padding: 20px;
-}
+}*/
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 aside {
-  flex: 2;
+  flex: 3;
   padding: 20px;
-  order: 3;
+  order: 1;
 }
 
 /* Main column */
 main {
   flex: 7;
   padding: 20px;
-  //order: 2;
+  order: 2;
 }
 
-
+main p { background-color: #faeaaf;
+		 padding: 20px;
+		 border-left: 6px solid #c4aa4c;
+}
 
 /* Footer */
 footer {
   padding: 20px;
   text-align: center;
+  color: white;
+  font-size: 14px;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  #wrapper, nav {   
+  #wrapper {   
     flex-direction: column;
   }
 }
