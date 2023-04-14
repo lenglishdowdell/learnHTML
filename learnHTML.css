@@ -7,3 +7,63 @@ body {
   font-family: Arial;
   margin: 0;
 }
+
+/* background colors */
+	header {background:#f97171}
+	main {background:#fff}
+	nav {background:#f5d55f}
+	aside {background:#c5ed77}
+	footer {background:#72c2f1}
+
+/* Header/logo Title */
+header {
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* The flexible grid (content) */
+
+/* Column container */
+#wrapper {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the top navigation bar */
+nav {
+  flex:1;
+  padding: 20px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+aside {
+  flex: 2;
+  padding: 20px;
+  order: 3;
+}
+
+/* Main column */
+main {
+  flex: 7;
+  padding: 20px;
+  //order: 2;
+}
+
+
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  #wrapper, nav {   
+    flex-direction: column;
+  }
+}
